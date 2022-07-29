@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Speedy_Bottle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woodBackround" translatesAutoresizingMaskIntoConstraints="NO" id="0em-4E-fFO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottle" translatesAutoresizingMaskIntoConstraints="NO" id="JCR-gs-IiG">
+                                <rect key="frame" x="92" y="333" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="IoC-0r-Syg"/>
+                                    <constraint firstAttribute="width" constant="230" id="dpo-dX-hp9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JCR-gs-IiG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AQo-aG-QMJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0em-4E-fFO" secondAttribute="trailing" id="JWn-4R-cbR"/>
+                            <constraint firstItem="0em-4E-fFO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MjU-6Q-mtc"/>
+                            <constraint firstItem="0em-4E-fFO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RRN-Yn-0Ux"/>
+                            <constraint firstItem="JCR-gs-IiG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UX3-mU-ybH"/>
+                            <constraint firstAttribute="bottom" secondItem="0em-4E-fFO" secondAttribute="bottom" id="d9G-At-GLw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottleImage" destination="JCR-gs-IiG" id="JKE-Wo-gte"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bottle" width="371" height="371"/>
+        <image name="woodBackround" width="564" height="1002"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
